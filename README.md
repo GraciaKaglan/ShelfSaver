@@ -1,9 +1,10 @@
-# 🤖 ShelfSaver - AI Food Expiry Tracker
+# ShelfSaver
 
-> **"AI-powered Telegram bot that eliminates manual food expiry checking, reducing waste by 70% through automated OCR and smart notifications"**
+> **"A Telegram bot that eliminates manual food expiry checking, reducing waste through automated OCR and early notifications"**
 
-[![AWS](https://img.shields.io/badge/AWS-Lambda%20%7C%20Textract%20%7C%20S3%20%7C%20DynamoDB-orange)](https://aws.amazon.com)
+[![Telegram Bot](https://img.shields.io/badge/Telegram-@ShelfSaver-blue?logo=telegram)](https://t.me/shelfsaver_graciaOve_bot)
 [![Demo](https://img.shields.io/badge/Demo-Live%20Video-blue)](https://www.loom.com/share/088bdf3911274a35a1789ccfe9ebaf0d?sid=8ea84cc1-2272-46b2-94ed-99054a227dad)
+[![Dashboard](https://img.shields.io/badge/Dashboard-Live%20Demo-green)](https://graciakaglan.github.io/ShelfSaver/frontend/)
 
 ## 🎯 **The Problem**
 
@@ -69,6 +70,20 @@ Small businesses waste **$1,600+ annually** on expired products due to manual pa
                                         ↓
 🌐 Web Dashboard ← 📲 Smart Notifications
 ```
+
+```mermaid
+graph LR
+    A[📱 Telegram Photo] --> B[API Gateway]
+    B --> C[Lambda]
+    C --> D[S3 Paris\nImage Storage]
+    C --> E[Textract\nOCR]
+    E --> F[DynamoDB Stockholm\nProduct DB]
+    F --> G[Lambda Scheduler]
+    G --> H[📲 Telegram Alerts]
+    F --> I[🌐 Web Dashboard]
+```
+
+
 ## 🔧 **How to Build This Yourself**
 
 ### **Step 1: Create Telegram Bot**
@@ -229,17 +244,6 @@ Then set it again with Option 1.
 - Zero manual checking
 - Minimal waste
 
-## 💡 **Innovation**
-
-ShelfSaver combines **computer vision**, **natural language processing**, and **serverless architecture** to solve a $1.3 trillion global food waste problem. Built specifically for small businesses that can't afford expensive inventory management systems.
-
-## 🛡️ **Reliability**
-
-- **Serverless architecture** - Infinite scalability
-- **Multi-region deployment** - High availability  
-- **Error handling** - Graceful failure recovery
-- **Webhook monitoring** - Self-healing connectivity
-
 ## 🔮 **Future Vision**
 
 - **Enterprise integration** - API for POS systems
@@ -248,7 +252,5 @@ ShelfSaver combines **computer vision**, **natural language processing**, and **
 - **Sustainability tracking** - Environmental impact metrics
 
 ---
-
-**Built for AWS Lambda Hackathon 2025** - *Transforming food waste with AI automation* 🤖🍕
-
-[**🎬 Watch Demo**](https://www.loom.com/share/088bdf3911274a35a1789ccfe9ebaf0d?sid=8ea84cc1-2272-46b2-94ed-99054a227dad) | [**🤖 Try Bot**](https://web.telegram.org/k/#@shelfsaver_graciaOve_bot) | [**📊 View Dashboard**](https://graciakaglan.github.io/ShelfSaver-AwsLambdaHackathon2025/frontend/)
+## **Milestones**
+- First version built for **AWS Lambda Hackathon 2025** [**🎬 Watch Demo**](https://www.loom.com/share/088bdf3911274a35a1789ccfe9ebaf0d?sid=8ea84cc1-2272-46b2-94ed-99054a227dad) | [**🤖 Try Bot**](https://web.telegram.org/k/#@shelfsaver_graciaOve_bot) | [**📊 View Dashboard**](https://graciakaglan.github.io/ShelfSaver/frontend/)
