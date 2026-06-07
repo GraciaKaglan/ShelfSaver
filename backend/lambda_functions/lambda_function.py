@@ -487,7 +487,7 @@ def handle_telegram_webhook(event, context):
                     send_message(bot_token, chat_id, debug_info)
                 elif text.lower() == '/webapp':
                     # Send web app link
-                    webapp_text = "🌐 Open ShelfSaver Web App:\nhttps://graciakaglan.github.io/ShelfSaver-AwsLambdaHackathon2025/frontend/"
+                    webapp_text = "🌐 Open ShelfSaver Web App:\nhttps://graciakaglan.github.io/ShelfSaver/frontend/"
                     send_message(bot_token, chat_id, webapp_text)
                 elif text.lower() == '/health':
                     send_message(bot_token, chat_id, "✅ Webhook is healthy and connected!")
@@ -819,7 +819,7 @@ def send_structured_product_result(bot_token, chat_id, result):
                 'reply_markup': {
                     'inline_keyboard': [
                         [
-                            {'text': '📦 Open ShelfSaver App', 'web_app': {'url': 'https://graciakaglan.github.io/ShelfSaver-AwsLambdaHackathon2025/frontend/'}}
+                            {'text': '📦 Open ShelfSaver App', 'web_app': {'url': 'https://graciakaglan.github.io/ShelfSaver/frontend/'}}
                         ]
                     ]
                 }
