@@ -9,17 +9,17 @@
 ## 🎯 **The Problem**
 
 Small businesses waste **$1,600+ annually** on expired products due to manual paper-based expiry tracking. Employees spend 30+ minutes daily checking dates manually, leading to:
-- 🗑️ **Food waste** from forgotten products  
-- 💰 **Revenue loss** from expired inventory
-- ⏰ **Time waste** on repetitive manual tasks
+- **Food waste** from forgotten products  
+- **Revenue loss** from expired inventory
+- **Time waste** on repetitive manual tasks
 
 ## ⚡ **The Solution**
 
 **ShelfSaver automates everything:**
-1. 📸 **Take a photo** of any product with your phone
-2. 🤖 **AI extracts data** using AWS Textract OCR  
-3. 📊 **Smart dashboard** shows all products with expiry alerts
-4. 🔔 **Intelligent notifications** prevent waste automatically
+1. **Take a photo** of any product with your phone
+2. **AI extracts data** using AWS Textract OCR  
+3. **Smart dashboard** shows all products with expiry alerts
+4. **Intelligent notifications** prevent waste automatically
 
 ## 🎬 **Live Demo**
 
