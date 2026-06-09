@@ -63,21 +63,13 @@ Small businesses waste **$1,600+ annually** on expired products due to manual pa
 
 ## 🚀 **Architecture**
 
-```
-📱 Telegram Photo → 🔄 API Gateway → ⚡ Lambda Function
-                                        ↓
-📸 S3 Paris ← 🧠 Textract OCR ← 🗃️ DynamoDB Stockholm  
-                                        ↓
-🌐 Web Dashboard ← 📲 Smart Notifications
-```
-
 ```mermaid
 graph LR
     A[📱 Telegram Photo] --> B[API Gateway]
     B --> C[Lambda]
-    C --> D[S3 Paris\nImage Storage]
+    C --> D[S3 Image Storage]
     C --> E[Textract\nOCR]
-    E --> F[DynamoDB Stockholm\nProduct DB]
+    E --> F[DynamoDB \nProduct DB]
     F --> G[Lambda Scheduler]
     G --> H[📲 Telegram Alerts]
     F --> I[🌐 Web Dashboard]
